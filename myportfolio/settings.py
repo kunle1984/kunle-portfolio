@@ -142,7 +142,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-import os
+
 MEDIA_ROOT=os.path.join(BASE_DIR, 'uploads')
 MEDIA_URL='/files/'
 
