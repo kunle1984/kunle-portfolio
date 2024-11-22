@@ -11,11 +11,15 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
-from dotenv import load_dotenv
+import urllib.parse
+#from dotenv import load_dotenv
 import os
+from os import getenv
 import dj_database_url
 import environs
-load_dotenv()
+
+import urllib.parse
+
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -88,6 +92,22 @@ DATABASES = {
     'default':dj_database_url.parse(env('DATABASE_URL'))
  
 }
+
+
+
+# Replace the DATABASES section of your settings.py with this
+# tmpPostgres = urllib.parse(env("DATABASE_URL"))
+
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': tmpPostgres.path.replace('/', ''),
+#         'USER': tmpPostgres.username,
+#         'PASSWORD': tmpPostgres.password,
+#         'HOST': tmpPostgres.hostname,
+#         'PORT': 5432,
+#     }
+# }
 
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
