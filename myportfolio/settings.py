@@ -218,10 +218,10 @@ AWS_STORAGE_BUCKET_NAME=os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
 
 CORS_ALLOWED_ORIGINS = [
-        'https://web-production-a8fb.up.railway.app',
+        'https://kunle-portfolio.onrender.com/',
         "http://localhost:8000"
         
     ]
 
-CSRF_TRUSTED_ORIGINS = ['https://web-production-a8fb.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['https://kunle-portfolio.onrender.com/']
 CORS_ALLOW_CREDENTIALS=True
