@@ -32,7 +32,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-zj#!7+#%gug326eye_6f7d5_vn!w=eq2c6()q*(%d*%hag=+-c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =False
+DEBUG =True
 
 ALLOWED_HOSTS = ['*']
 
@@ -218,10 +218,10 @@ AWS_STORAGE_BUCKET_NAME=os.environ.get('AWS_STORAGE_BUCKET_NAME')
 
 
 CORS_ALLOWED_ORIGINS = [
-        'https://kunle-portfolio.onrender.com/',
+        'https://kunle-portfolio.onrender.com',
         "http://localhost:8000"
         
     ]
 
-CSRF_TRUSTED_ORIGINS = ['https://kunle-portfolio.onrender.com/']
+CSRF_TRUSTED_ORIGINS = ['https://kunle-portfolio.onrender.com']
 CORS_ALLOW_CREDENTIALS=True
