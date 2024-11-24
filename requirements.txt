@@ -5,7 +5,7 @@ dj-database-url==0.5.0
 Django==4.0.4
 django-cors-headers==3.8.0
 django-storages==1.14.4
-
+boto3==1.24.36
 environs==9.5.0
 marshmallow==3.23.1
 # packaging==24.2
